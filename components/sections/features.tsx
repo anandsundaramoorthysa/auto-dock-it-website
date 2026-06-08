@@ -1,0 +1,34 @@
+import { SectionHeading } from "@/components/ui/section-heading";
+import { Icon } from "@/components/ui/icon";
+import { Reveal } from "@/components/ui/reveal";
+import { features } from "@/lib/data";
+
+export function Features() {
+  return (
+    <section id="features" className="border-b border-border">
+      <div className="container-prose py-20 sm:py-28">
+        <SectionHeading
+          eyebrow="Features"
+          title="Everything you need to dockerize with confidence"
+          subtitle="From multi-service Compose generation to a full audit trail of every repair attempt — Auto-Dock It is built for real, messy repositories."
+        />
+
+        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {features.map((f, i) => (
+            <Reveal key={f.title} delay={(i % 4) * 70}>
+              <div className="flex h-full flex-col rounded-xl border border-border bg-surface p-5 transition-colors hover:border-border2">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border2 bg-bg">
+                  <Icon name={f.icon} className="h-5 w-5" />
+                </span>
+                <h3 className="mt-4 text-sm font-semibold">{f.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-fg-muted">
+                  {f.desc}
+                </p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

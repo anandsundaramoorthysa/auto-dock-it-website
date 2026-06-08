@@ -1,0 +1,7 @@
+# Normalize line endings to LF so the Linux CI build is deterministic.
+* text=auto eol=lf
+
+# Binary assets — never normalized.
+*.png binary
+*.svg text eol=lf
+*.ico binary
