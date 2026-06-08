@@ -28,7 +28,7 @@ const shots = [
 
 export function Screenshots() {
   return (
-    <section className="border-b border-border">
+    <section className="relative">
       <div className="container-prose py-20 sm:py-28">
         <SectionHeading
           eyebrow="See it in action"
@@ -43,16 +43,18 @@ export function Screenshots() {
               delay={i * 80}
               className={s.wide ? "lg:col-span-2" : ""}
             >
-              <figure className="overflow-hidden rounded-xl border border-border2 bg-surface">
-                <ThemeImage
-                  lightSrc={s.light}
-                  darkSrc={s.dark}
-                  alt={s.alt}
-                  width={1400}
-                  height={900}
-                  className="w-full"
-                />
-                <figcaption className="border-t border-border px-4 py-3 text-sm font-medium text-fg-muted">
+              <figure className="glass glass-hi card-hover overflow-hidden rounded-2xl p-1.5">
+                <div className="overflow-hidden rounded-xl border border-border">
+                  <ThemeImage
+                    lightSrc={s.light}
+                    darkSrc={s.dark}
+                    alt={s.alt}
+                    width={1400}
+                    height={900}
+                    className="w-full"
+                  />
+                </div>
+                <figcaption className="px-4 py-3 text-sm font-medium text-fg-muted">
                   {s.title}
                 </figcaption>
               </figure>

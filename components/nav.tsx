@@ -28,10 +28,10 @@ export function Nav() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-colors duration-200 ${
+      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         scrolled
-          ? "border-b border-border bg-bg/80 backdrop-blur-md"
-          : "border-b border-transparent"
+          ? "glass border-b shadow-[0_4px_30px_-12px_var(--glow)]"
+          : "border-b border-transparent bg-transparent"
       }`}
     >
       <nav
@@ -62,7 +62,7 @@ export function Nav() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Star Auto-Dock It on GitHub"
-            className="hidden h-9 items-center gap-2 rounded-xl border border-border2 bg-surface px-3 text-sm font-medium text-fg transition-colors hover:border-fg-muted sm:inline-flex"
+            className="glass glass-hi hidden h-9 items-center gap-2 rounded-xl px-3 text-sm font-medium text-fg transition-colors hover:border-border2 sm:inline-flex"
           >
             <Icon name="Github" className="h-4 w-4" />
             <span className="hidden lg:inline">Star</span>
@@ -84,7 +84,7 @@ export function Nav() {
             onClick={() => setOpen((v) => !v)}
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
-            className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border2 bg-surface text-fg md:hidden"
+            className="glass glass-hi inline-flex h-9 w-9 items-center justify-center rounded-full text-fg md:hidden"
           >
             <Icon name={open ? "X" : "Menu"} className="h-4 w-4" />
           </button>
@@ -94,7 +94,7 @@ export function Nav() {
       {/* Mobile sheet */}
       {open ? (
         <div className="md:hidden">
-          <div className="container-prose flex flex-col gap-1 border-t border-border bg-bg pb-6 pt-2">
+          <div className="glass container-prose flex flex-col gap-1 border-t pb-6 pt-2">
             {navLinks.map((l) => (
               <a
                 key={l.href}

@@ -9,7 +9,7 @@ export function Faq() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="border-b border-border bg-surface">
+    <section id="faq" className="relative">
       <div className="container-prose py-20 sm:py-28">
         <SectionHeading
           eyebrow="FAQ"
@@ -17,17 +17,17 @@ export function Faq() {
           subtitle="The things people ask before pointing it at their first repository."
         />
 
-        <ul className="mx-auto mt-12 max-w-3xl divide-y divide-border overflow-hidden rounded-xl border border-border">
+        <ul className="glass glass-hi mx-auto mt-12 max-w-3xl divide-y divide-border overflow-hidden rounded-2xl">
           {faqs.map((f, i) => {
             const isOpen = open === i;
             return (
-              <li key={f.q} className="bg-bg">
+              <li key={f.q}>
                 <h3>
                   <button
                     type="button"
                     onClick={() => setOpen(isOpen ? null : i)}
                     aria-expanded={isOpen}
-                    className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left transition-colors hover:bg-surface"
+                    className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left transition-colors hover:bg-fg/[0.03]"
                   >
                     <span className="text-sm font-semibold sm:text-base">
                       {f.q}

@@ -30,7 +30,7 @@ function Cell({ value }: { value: string }) {
 export function Comparison() {
   const lastIdx = comparison.tools.length - 1;
   return (
-    <section id="compare" className="border-b border-border bg-surface">
+    <section id="compare" className="relative">
       <div className="container-prose py-20 sm:py-28">
         <SectionHeading
           eyebrow="Compare"
@@ -38,14 +38,14 @@ export function Comparison() {
           subtitle="Nixpacks, Buildpacks and repo2docker automate the happy path. Auto-Dock It keeps going when the build breaks."
         />
 
-        <div className="mt-12 overflow-x-auto rounded-xl border border-border">
+        <div className="glass glass-hi mt-12 overflow-x-auto rounded-2xl">
           <table className="w-full min-w-[640px] border-collapse text-sm">
             <caption className="sr-only">
               Capability comparison between Nixpacks, Buildpacks, repo2docker, a
               one-shot LLM, and Auto-Dock It.
             </caption>
             <thead>
-              <tr className="border-b border-border bg-bg">
+              <tr className="border-b border-border">
                 <th
                   scope="col"
                   className="px-4 py-4 text-left font-semibold"
@@ -81,7 +81,7 @@ export function Comparison() {
                     <td
                       key={i}
                       className={`px-4 py-3.5 text-center ${
-                        i === lastIdx ? "bg-bg" : ""
+                        i === lastIdx ? "bg-fg/[0.04]" : ""
                       }`}
                     >
                       <Cell value={v} />

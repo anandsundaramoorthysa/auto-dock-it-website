@@ -5,7 +5,7 @@ import { contacts, links, site } from "@/lib/site";
 export function Footer() {
   const year = 2026;
   return (
-    <footer className="border-t border-border bg-surface">
+    <footer className="relative border-t border-border bg-bg2">
       <div className="container-prose py-14">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
@@ -19,7 +19,7 @@ export function Footer() {
                 href={links.liveDemo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg border border-border2 px-3 py-2 text-sm font-medium transition-colors hover:border-fg-muted"
+                className="glass glass-hi inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-colors hover:border-border2"
               >
                 <Icon name="ExternalLink" className="h-4 w-4" /> Live demo
               </a>
@@ -27,7 +27,7 @@ export function Footer() {
                 href={links.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg border border-border2 px-3 py-2 text-sm font-medium transition-colors hover:border-fg-muted"
+                className="glass glass-hi inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-colors hover:border-border2"
               >
                 <Icon name="Github" className="h-4 w-4" /> GitHub
               </a>

@@ -24,7 +24,7 @@ export function ThemeToggle({ className = "" }: { className?: string }) {
             : "Switch to dark mode"
           : "Toggle color theme"
       }
-      className={`inline-flex h-9 w-9 items-center justify-center rounded-full border border-border2 bg-surface text-fg transition-colors hover:border-fg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fg ${className}`}
+      className={`glass glass-hi inline-flex h-9 w-9 items-center justify-center rounded-full text-fg transition-colors hover:border-border2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fg ${className}`}
     >
       {/* Render-safe before mount: show a neutral icon to avoid mismatch. */}
       {mounted ? (

@@ -4,17 +4,16 @@ import { links } from "@/lib/site";
 
 export function Cta() {
   return (
-    <section className="border-b border-border">
+    <section className="relative">
       <div className="container-prose py-20 sm:py-28">
-        <div className="relative overflow-hidden rounded-2xl border border-border2 bg-surface px-6 py-14 text-center sm:px-12">
+        <div className="glass glass-hi relative overflow-hidden rounded-3xl px-6 py-16 text-center sm:px-12">
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute inset-0 opacity-[0.5] [mask-image:radial-gradient(ellipse_at_center,black,transparent_75%)]"
-            style={{
-              backgroundImage:
-                "linear-gradient(to right, var(--adi-border) 1px, transparent 1px), linear-gradient(to bottom, var(--adi-border) 1px, transparent 1px)",
-              backgroundSize: "36px 36px",
-            }}
+            className="grid-bg pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,black,transparent_72%)]"
+          />
+          <div
+            aria-hidden="true"
+            className="glow-radial animate-pulse-glow pointer-events-none absolute inset-x-0 top-0 h-2/3"
           />
           <div className="relative mx-auto max-w-2xl">
             <h2 className="text-balance text-3xl font-bold tracking-tight sm:text-4xl">

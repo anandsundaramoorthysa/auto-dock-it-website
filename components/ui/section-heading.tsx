@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 
 export function Eyebrow({ children }: { children: ReactNode }) {
   return (
-    <span className="inline-block text-xs font-semibold uppercase tracking-[0.18em] text-fg-muted">
+    <span className="glass glass-hi inline-flex items-center rounded-full px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-fg-muted">
       {children}
     </span>
   );
@@ -25,7 +25,7 @@ export function SectionHeading({
   return (
     <div className={`max-w-2xl ${alignment}`}>
       {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
-      <Tag className="mt-3 text-balance text-3xl font-bold tracking-tight sm:text-4xl">
+      <Tag className="mt-3 text-balance text-3xl font-bold tracking-tight text-gradient sm:text-4xl">
         {title}
       </Tag>
       {subtitle ? (

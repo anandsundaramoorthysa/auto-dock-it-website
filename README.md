@@ -71,6 +71,19 @@ public/         logos, favicon, OG image, theme-matched screenshots
 Logos and screenshots are sourced from the product. Screenshots are theme-matched:
 light-mode captures render in light mode, dark-mode captures in dark mode.
 
+## Contact
+
+**Melvin Joshua**
+- Email: [melvinjoshua1001@gmail.com](mailto:melvinjoshua1001@gmail.com?subject=Auto-Dock%20It)
+- GitHub: [@MelvinJoshua1375](https://github.com/MelvinJoshua1375)
+- LinkedIn: [melvin-joshua](https://www.linkedin.com/in/melvin-joshua/)
+
+**Anand Sundaramoorthy SA**
+- Email: [sanand03072005@gmail.com](mailto:sanand03072005@gmail.com?subject=Auto-Dock%20It)
+- GitHub: [@anandsundaramoorthysa](https://github.com/anandsundaramoorthysa)
+- LinkedIn: [anand-sundaramoorthy-sa](https://www.linkedin.com/in/anand-sundaramoorthy-sa-90002a306)
+
 ## License
 
-MIT — see [LICENSE](LICENSE). © 2026 Melvin Joshua & Anand Sundaramoorthy SA.
+Released under the **MIT License** — see [LICENSE](LICENSE) for the full text.
+Copyright (c) 2026 Melvin Joshua and Anand Sundaramoorthy SA.

@@ -49,9 +49,17 @@ export default function NotFound() {
   }, []);
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="relative flex min-h-screen flex-col">
+      <div
+        aria-hidden="true"
+        className="glow-radial pointer-events-none absolute inset-x-0 top-0 h-[480px]"
+      />
+      <div
+        aria-hidden="true"
+        className="grid-bg pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_at_top,black,transparent_70%)]"
+      />
       {/* Minimal header */}
-      <header className="border-b border-border">
+      <header className="relative border-b border-border">
         <div className="container-prose flex h-16 items-center justify-between">
           <a href="/" aria-label="Auto-Dock It — home">
             <Logo />
@@ -60,8 +68,8 @@ export default function NotFound() {
         </div>
       </header>
 
-      <main className="container-prose flex flex-1 flex-col items-center justify-center py-16 text-center">
-        <span className="inline-flex h-16 w-16 items-center justify-center rounded-2xl border border-border2 bg-surface">
+      <main className="container-prose relative flex flex-1 flex-col items-center justify-center py-16 text-center">
+        <span className="glass glass-hi inline-flex h-16 w-16 items-center justify-center rounded-2xl">
           <Icon name="PackageX" className="h-8 w-8" />
         </span>
 
@@ -77,8 +85,8 @@ export default function NotFound() {
         </p>
 
         {/* Mock pipeline run */}
-        <div className="mt-10 w-full max-w-xl overflow-hidden rounded-xl border border-border2 bg-surface text-left">
-          <div className="flex items-center gap-2 border-b border-border bg-bg px-4 py-2.5">
+        <div className="glass glass-hi mt-10 w-full max-w-xl overflow-hidden rounded-2xl text-left">
+          <div className="flex items-center gap-2 border-b border-border px-4 py-2.5">
             <span className="flex gap-1.5">
               <span className="h-2.5 w-2.5 rounded-full border border-border2" />
               <span className="h-2.5 w-2.5 rounded-full border border-border2" />

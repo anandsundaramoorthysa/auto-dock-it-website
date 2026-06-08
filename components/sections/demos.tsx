@@ -6,7 +6,7 @@ import { links } from "@/lib/site";
 
 export function Demos() {
   return (
-    <section id="demos" className="border-b border-border bg-surface">
+    <section id="demos" className="relative">
       <div className="container-prose py-20 sm:py-28">
         <SectionHeading
           eyebrow="Receipts"
@@ -17,7 +17,7 @@ export function Demos() {
         <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {demos.map((d, i) => (
             <Reveal key={d.name} delay={(i % 3) * 70}>
-              <article className="flex h-full flex-col rounded-xl border border-border bg-bg p-5">
+              <article className="glass glass-hi card-hover flex h-full flex-col rounded-2xl p-5">
                 <div className="flex items-center justify-between gap-2">
                   <h3 className="font-mono text-sm font-semibold">{d.name}</h3>
                   <span className="inline-flex items-center gap-1 rounded-md border border-border2 px-2 py-0.5 text-[0.7rem] font-medium text-fg-muted">

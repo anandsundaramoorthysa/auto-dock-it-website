@@ -27,7 +27,7 @@ const loops = [
 
 export function SelfHealing() {
   return (
-    <section className="border-b border-border bg-surface">
+    <section className="relative">
       <div className="container-prose py-20 sm:py-28">
         <SectionHeading
           eyebrow="The differentiator"
@@ -38,9 +38,9 @@ export function SelfHealing() {
         <div className="mt-14 grid gap-6 lg:grid-cols-2">
           {loops.map((loop, i) => (
             <Reveal key={loop.title} delay={i * 90}>
-              <div className="flex h-full flex-col rounded-xl border border-border bg-bg p-6">
+              <div className="glass glass-hi card-hover flex h-full flex-col rounded-2xl p-6">
                 <div className="flex items-center gap-3">
-                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-border2 bg-surface">
+                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-border2 bg-surface">
                     <Icon name={loop.icon} className="h-5 w-5" />
                   </span>
                   <div>
@@ -75,8 +75,8 @@ export function SelfHealing() {
 
         {/* Nested-loop highlight */}
         <Reveal>
-          <div className="mt-6 flex flex-col gap-4 rounded-xl border border-border bg-bg p-6 sm:flex-row sm:items-center">
-            <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-border2 bg-surface">
+          <div className="glass glass-hi mt-6 flex flex-col gap-4 rounded-2xl p-6 sm:flex-row sm:items-center">
+            <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-border2 bg-surface">
               <Icon name="Workflow" className="h-5 w-5" />
             </span>
             <p className="text-sm leading-relaxed text-fg-muted">
