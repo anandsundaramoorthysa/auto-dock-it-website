@@ -38,8 +38,8 @@ export function SelfHealing() {
         <div className="mt-14 grid gap-6 lg:grid-cols-2">
           {loops.map((loop, i) => (
             <Reveal key={loop.title} delay={i * 90}>
-              <div className="glass glass-hi card-hover flex h-full flex-col rounded-2xl p-6">
-                <div className="flex items-center gap-3">
+              <div className="glass glass-hi card-hover flex h-full flex-col rounded-2xl p-6 text-center sm:text-left">
+                <div className="flex flex-col items-center gap-3 sm:flex-row sm:items-center">
                   <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-border2 bg-surface">
                     <Icon name={loop.icon} className="h-5 w-5" />
                   </span>
@@ -50,7 +50,7 @@ export function SelfHealing() {
                 </div>
 
                 <dl className="mt-5 space-y-3 text-sm">
-                  <div className="flex gap-2">
+                  <div className="flex flex-wrap justify-center gap-2 sm:justify-start">
                     <dt className="shrink-0 font-medium text-fg-muted">
                       Trigger:
                     </dt>
@@ -61,7 +61,7 @@ export function SelfHealing() {
                   <p className="leading-relaxed text-fg-muted">{loop.detail}</p>
                 </dl>
 
-                <p className="mt-auto flex items-start gap-2 border-t border-border pt-4 text-xs leading-relaxed text-fg-muted">
+                <p className="mt-auto flex items-start justify-center gap-2 border-t border-border pt-4 text-xs leading-relaxed text-fg-muted sm:justify-start">
                   <Icon
                     name="CircleCheck"
                     className="mt-0.5 h-3.5 w-3.5 shrink-0"
@@ -75,7 +75,7 @@ export function SelfHealing() {
 
         {/* Nested-loop highlight */}
         <Reveal>
-          <div className="glass glass-hi mt-6 flex flex-col gap-4 rounded-2xl p-6 sm:flex-row sm:items-center">
+          <div className="glass glass-hi mt-6 flex flex-col items-center gap-4 rounded-2xl p-6 text-center sm:flex-row sm:items-center sm:text-left">
             <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-border2 bg-surface">
               <Icon name="Workflow" className="h-5 w-5" />
             </span>

@@ -21,7 +21,12 @@ export function SectionHeading({
   align?: "left" | "center";
   as?: "h1" | "h2" | "h3";
 }) {
-  const alignment = align === "center" ? "text-center mx-auto" : "text-left";
+  // Phone view: always centered. From `sm` up: respect the requested align
+  // (left by default, centered when align="center").
+  const alignment =
+    align === "center"
+      ? "text-center mx-auto"
+      : "text-center mx-auto sm:text-left sm:mx-0";
   return (
     <div className={`max-w-2xl ${alignment}`}>
       {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}

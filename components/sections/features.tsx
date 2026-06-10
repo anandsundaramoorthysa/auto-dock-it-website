@@ -16,7 +16,7 @@ export function Features() {
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((f, i) => (
             <Reveal key={f.title} delay={(i % 4) * 70}>
-              <div className="glass glass-hi card-hover flex h-full flex-col rounded-2xl p-5">
+              <div className="glass glass-hi card-hover flex h-full flex-col items-center rounded-2xl p-5 text-center sm:items-start sm:text-left">
                 <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-border2 bg-surface">
                   <Icon name={f.icon} className="h-5 w-5" />
                 </span>

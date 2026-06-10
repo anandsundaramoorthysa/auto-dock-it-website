@@ -12,6 +12,7 @@ export function Faq() {
     <section id="faq" className="relative">
       <div className="container-prose py-20 sm:py-28">
         <SectionHeading
+          align="center"
           eyebrow="FAQ"
           title="Questions, answered"
           subtitle="The things people ask before pointing it at their first repository."
